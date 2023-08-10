@@ -43,10 +43,12 @@
       </div>
     </header>
     <section class="formulario">
-       <form action="" class="formulario__home">
+       <form action="" class="formulario__home" data-formulario>
          <legend>Iniciar Sessão</legend>
          <input type="email" name="email" id="email" placeholder="Escreva seu E-mail" minlength="6" required>
+         <small class="mensagem-erro"></small>
          <input type="password" name="senha" id="senha" placeholder="Escreva sua Senha" minlength="4" required>
+         <small class="mensagem-erro"></small>
          <input type="submit" value="Entrar" class="botao" data-entrar>
        </form>
     </section>
@@ -65,8 +67,10 @@
           <legend>Fale conosco</legend>
           <label for="">
              <input type="text" name="nome" id="nome" placeholder="escreva seu nome" minlength="3" required>
+             <small class="mensagem-erro"></small>
           </label>
           <input name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" minlength="50" required></input>
+          <small class="mensagem-erro"></small>
           <label for="">
           <input type="submit" name="nome" class="botao" value="Enviar mensagem" >
           </label>
@@ -78,7 +82,8 @@
       </div>
     </section>
   </div>
-  <script src="/assets/js/login.js" type="module"></script>
+  <script src="/assets/js/validacao/validaformulario.js"></script>
+  <script src="/assets/js/validacao/login.js" type="module"></script>
 
 </body>
 </html>
