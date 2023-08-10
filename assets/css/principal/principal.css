@@ -1,0 +1,75 @@
+
+.pricipal__titulo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+.principal__cabecalho{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+}
+.principal__link{
+  color: var(--azul-escuro);
+  font-weight: 700;
+  padding: 0 1.5rem 0 0;
+  background:url('/assets/img/arrow_back_black_24dp\ 1.svg') no-repeat right;
+}
+.principal__cabecalho .botao{
+  padding: 1rem;
+
+  font-weight: bold;
+}
+
+@media screen and (min-width:0) {
+  .pricipal__titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 2rem 0;
+  }
+  .principal__cabecalho{
+    padding: 0 1rem;
+  }
+  .principal__cabecalho .botao{
+    padding: 0.6rem;
+    font-weight: bold;
+    
+  }
+ 
+  
+}
+@media screen and (min-width:769px) {
+  
+.pricipal__titulo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+.principal__cabecalho{
+  padding: 0 2rem;
+}
+.principal__link{
+  padding: 0 1.5rem 0 0;
+ 
+}
+
+  
+}
+@media screen and (min-width:992px) {
+  
+.pricipal__titulo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+.principal__cabecalho{
+  padding: 0 7rem;
+}
+.principal__link{
+  padding: 0 1.5rem 0 0;
+ 
+}
+
+  
+}

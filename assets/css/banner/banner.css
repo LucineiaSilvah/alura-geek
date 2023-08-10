@@ -1,0 +1,123 @@
+.banner{
+  width: 100%;
+  height: 400px;
+  background: url('/assets/img/banner-image.png') no-repeat center / cover;
+  display: flex;
+  align-items: flex-end;
+}
+.banner__conteudo{
+  padding: 7rem ;
+  display: flex;
+  height: 30%;
+  flex-direction: column;
+
+  
+}
+.banner .banner__titulo{
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 3rem;
+}
+.banner__promo{
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+.banner .botao{
+  width: 150px;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width:0) {
+  .banner{
+    width: 100%;
+    
+    
+  }
+  .banner__conteudo{
+    padding:0 0 0 2rem ;
+    height:55%;
+  }
+  .banner .banner__titulo{
+   
+    font-size: 2rem;
+  }
+  .banner__promo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .banner .botao{
+    width: 150px;
+    padding: .7rem;
+    text-align: center;
+  }
+  
+}
+@media screen and (min-width:768px) {
+  .banner{
+
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .banner__conteudo{
+    padding:0 0 0 2rem ;
+    height: 45%;
+  }
+  .banner .banner__titulo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .banner__promo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+  }
+  .banner .botao{
+    width: 150px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
+}
+@media screen and (min-width:992px) {
+  .banner{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .banner__conteudo{
+    padding: 7rem ;
+    display: flex;
+    height: 30%;
+    flex-direction: column;
+  
+    
+  }
+  .banner .banner__titulo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 3rem;
+  }
+  .banner__promo{
+    color: var(--branco);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+  }
+  .banner .botao{
+    width: 150px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
+}

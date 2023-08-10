@@ -1,0 +1,51 @@
+
+  
+  @media screen and (min-width:0) {
+  .formulario.form__adm{
+    width: 95%;
+    padding: 0 ;
+   display: flex;
+   margin: 0 auto;
+  
+    
+  }
+  .formulario__adm {
+     width:100%;
+     margin: auto;
+     max-width: 500px;
+     
+  }
+  .formulario__adm input{
+    width: 100%;
+    padding: 1rem 0;
+    margin-bottom: 5px;
+  }
+ .formulario__adm--titulo{
+  padding: 0 0 1rem 0;
+  font-weight: 700;
+ }
+  }
+  @media screen and (min-width:768px) {
+    .formulario.form__adm{
+      width: 100%;
+      padding:3rem  0 ;
+   
+      
+  }
+} 
+  
+  @media screen and (min-width:992px) {
+  
+    .formulario.form__adm{
+      width: 100%;
+      padding:5rem  0 ;
+   
+      
+    }
+    .formulario__adm {
+       width:500px;
+       margin: auto;
+       padding:0 0.5rem 7rem 0.5rem;
+    }
+    }
+  

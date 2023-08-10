@@ -1,0 +1,127 @@
+[
+  {
+   "nome": "star1",
+   "url": "/assets/img/star1.svg",
+   "preco": 20.00,
+   "categoria": "star wars",
+   "id": "1"
+  },
+  {
+   "nome": "star2",
+   "url": "/assets/img/star2.svg",
+   "preco": 25.55,
+   "categoria": "star wars",
+   "id": "2"
+  },
+  {
+    "nome": "star3",
+    "url": "/assets/img/star3.svg",
+    "preco": 55.55,
+    "categoria": "star wars",
+   "id": "3"
+  },
+  {
+    "nome": "star4",
+    "url": "/assets/img/star4.svg",
+    "preco": 65.66,
+    "categoria": "star wars",
+   "id": "4"
+  },
+  {
+    "nome": "star5",
+    "url": "/assets/img/star5.svg",
+    "preco": 15.55,
+    "categoria": "star wars",
+   "id": "5"
+  },
+  {
+    "nome": "star6",
+    "url": "/assets/img/star6.svg",
+    "preco": 25.00,
+    "categoria": "star wars",
+   "id": "6"
+  },
+  {
+    "nome": "controle",
+    "url": "/assets/img/controle.svg",
+    "preco": 20.00,
+    "categoria": "console",
+    "id": "7"
+   },
+   {
+    "nome": "console",
+    "url": "/assets/img/console.svg",
+    "preco": 20.00,
+    "categoria": "console",
+    "id": "8"
+   },
+   {
+    "nome": "gameboy",
+    "url": "/assets/img/gboy.svg",
+    "preco": 20.00,
+    "categoria": "console",
+    "id": "9"
+   },
+   {
+    "nome": "playstation",
+    "url": "/assets/img/ps.svg",
+    "preco": 2000.00,
+    "categoria": "console",
+    "id": "10"
+   },
+   {
+    "nome": "nintendinho",
+    "url": "/assets/img/nintendinho.svg",
+    "preco": 20.00,
+    "categoria": "console",
+    "id": "11"
+   },
+   { "nome": "switch",
+   "url": "/assets/img/switch.svg",
+   "preco": 20.00,
+   "categoria": "diversos",
+   "id": "12"
+  },
+ {
+  "nome": "p1",
+  "url": "/assets/img/p1.svg",
+  "preco": 20,
+  "categoria": "diversos",
+  "id": "13"
+ },
+ {
+  "nome": "p2",
+  "url": "/assets/img/p2.svg",
+  "preco": 20,
+  "categoria": "diversos",
+  "id": "14"
+ },
+ {
+  "nome": "p3",
+  "url": "/assets/img/p3.svg",
+  "preco": 20,
+  "categoria": "diversos",
+  "id": "15"
+ },
+ {
+  "nome": "p4",
+  "url": "/assets/img/p4.svg",
+  "preco": 20,
+  "categoria": "diversos",
+  "id": "16"
+ },
+ {
+  "nome": "p5",
+  "url": "/assets/img/p5.svg",
+  "preco": 20,
+  "categoria": "diversos",
+  "id": "17"
+ },
+ {
+  "nome": "p6",
+  "url": "/assets/img/p6.svg",
+  "preco": 20,
+  "categoria": "diversos",
+  "id": "18"
+ }
+ ]

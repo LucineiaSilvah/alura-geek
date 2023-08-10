@@ -1,0 +1,21 @@
+.produto__item{
+position: relative;
+}
+.produto__item .icons{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--branco);
+
+
+  
+}
+.produto__item .icons i:hover{
+  scale: 1.3;
+
+}
+
+

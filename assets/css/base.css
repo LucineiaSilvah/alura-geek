@@ -1,0 +1,27 @@
+:root{
+  --brancoleve: #f5f5f5;
+  --branco:#fff;
+  --azul-claro : #EAF2FD;
+  --preto: #000000;
+  --cinza: #c3c3c3;
+  --bg-pesquisa: #e9e9ed;
+  --azul-escuro :  #2A7AE4;
+  --fonteRelewey:'Raleway', sans-serif;
+}
+.container{
+
+  overflow: hidden;
+
+
+
+}
+
+body{
+  font-family: var(--fonteRelewey);
+}
+.botao{
+color:var(--branco);
+background: var(--azul-escuro);
+border: none;
+
+}
