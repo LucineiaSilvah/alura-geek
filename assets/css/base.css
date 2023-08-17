@@ -43,6 +43,10 @@ border: none;
   outline: 0;
   border: 2px solid var(--azul-escuro);
 }
+.form-control  i.fa-circle-check,
+.form-control  i.fa-circle-exclamation{
+ visibility: hidden;
+}
 .form-control.success input{
   border: 2px solid greenyellow;
 }
