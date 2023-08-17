@@ -10,7 +10,7 @@ form.addEventListener('submit', (e)=>{
   ;
 checkInputs()
  setTimeout(()=>{
-  window.location.href ='/index.html'
+  window.location.href ='index.html'
  },800)
   
 
