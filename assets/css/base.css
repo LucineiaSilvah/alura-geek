@@ -25,3 +25,47 @@ background: var(--azul-escuro);
 border: none;
 
 }
+
+.form-control{
+
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.form-control input{
+  border-radius: 5px;
+  width: 90%;
+  display: block;
+  outline: 0;
+  border: 2px solid var(--azul-escuro);
+}
+.form-control.success input{
+  border: 2px solid greenyellow;
+}
+.form-control.error input{
+  border: 2px solid rgb(242, 72, 4);
+}
+.form-control.success i.fa-circle-check{
+  visibility: visible;
+}
+.form-control.error i.fa-circle-exclamation{
+  visibility: visible;
+}
+.form-control.error small{
+  color:rgb(242, 72, 4); 
+  visibility: visible;
+}
+.form-control i{
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+.form-control small{
+  position: absolute;
+  bottom: 0;
+  visibility: hidden;
+}

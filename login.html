@@ -44,11 +44,25 @@
     </header>
     <section class="formulario">
        <form action="" class="formulario__home" data-formulario>
-         <legend>Iniciar Sessão</legend>
-         <input type="email" name="email" id="email" placeholder="Escreva seu E-mail" minlength="6" required>
-         <small class="mensagem-erro"></small>
-         <input type="password" name="senha" id="senha" placeholder="Escreva sua Senha" minlength="4" required>
-         <small class="mensagem-erro"></small>
+        <legend>Iniciar Sessão</legend>
+        <div class="form-control ">
+          
+         
+         <label for="email">Email</label>
+         <input type="email" name="email" id="email" placeholder="Escreva seu E-mail" minlength="6" >
+         <i class="fa-solid fa-circle-check success" style="color: #39f736;"></i>
+         <i class="fa-solid fa-circle- error" style="color: #e90124;"></i>
+         <small class="mensagem-email"></small>
+         </div>
+         <div class="form-control ">
+          
+       
+          <label for="senha">Senha</label>
+          <input type="password" name="senha" id="senha" placeholder="Escreva seu senha" minlength="6" >
+          <i class="fa-solid fa-circle-check success" style="color: #39f736;"></i>
+          <i class="fa-solid fa-circle- error" style="color: #e90124;"></i>
+          <small class="mensagem-email"></small>
+          </div>
          <input type="submit" value="Entrar" class="botao" data-entrar>
        </form>
     </section>
@@ -63,17 +77,18 @@
           <li><a href="#">Quero Ser Franqueado</a></li>
           <li><a href="#">Anuncie aqui</a></li>
         </ul>
-        <form action="">
+        <form action="" data-formulario>
           <legend>Fale conosco</legend>
-          <label for="">
-             <input type="text" name="nome" id="nome" placeholder="escreva seu nome" minlength="3" required>
-             <small class="mensagem-erro"></small>
-          </label>
-          <input name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" minlength="50" required></input>
-          <small class="mensagem-erro"></small>
-          <label for="">
+          <div class="form-control " >
+          
+       
+            <label for="mensagem">mensagem</label>
+            <input type="text" name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" minlength="50" >
+           
+            </div>
+          
           <input type="submit" name="nome" class="botao" value="Enviar mensagem" >
-          </label>
+          
         </form>
       </div>
       <div class="rodape__rodape">
@@ -82,8 +97,7 @@
       </div>
     </section>
   </div>
-  <script src="/assets/js/validacao/validaformulario.js"></script>
-  <script src="/assets/js/validacao/login.js" type="module"></script>
+<script src="/assets/js/login.js" type="module"></script>
 
 </body>
 </html>

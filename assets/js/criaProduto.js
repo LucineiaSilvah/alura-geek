@@ -4,7 +4,7 @@ const formulario = document.querySelector('[data-formulario]');
 
 async function criarProduto(evento){
   evento.preventDefault();
- const id = document.querySelector('[data-id]').value;
+
   const url = document.querySelector('[data-url]').value;
   const nome = document.querySelector('[data-nome]').value;
   const preco = document.querySelector('[data-preco]').value;
@@ -13,7 +13,7 @@ async function criarProduto(evento){
  // const descricao = document.querySelector('[data-descricao]').value;
 
  try{
-  await conectaApi.criaProduto(id,url,nome,preco,categoria);
+  await conectaApi.criaProduto(url,nome,preco,categoria);
   //redirecionar 
   alert('produto adicionado com sucesso!')
   window.location.href = "/index.html";
@@ -22,4 +22,7 @@ async function criarProduto(evento){
  }
    
 }   
+
 formulario.addEventListener('submit', evento => criarProduto(evento));
+//edita
+

@@ -14,9 +14,9 @@ export default function constroiCard(id,url,nome,preco,categoria){
            <span class="icons">
              <i class="fa-solid fa-trash btn-delete"></i>
              
-             <i class="fa-solid fa-pen"></i>
+             <i class="fa-solid fa-pen btn-edit"></i>
            
-             <span data-id>${id}</span>
+             <span data-id >${id}</span>
            </span>
           </span>
            <span class="produto__nome">${nome}</span>
@@ -50,7 +50,10 @@ async function listaProdutos(){
 
 listaProdutos();
 
-lista.addEventListener('click', function(evento){
+
+lista.addEventListener('click', function (evento){
+ 
+
   let elementoClicado = evento.target;
   if(elementoClicado.classList.contains('btn-delete')){
     let btn = elementoClicado.parentElement;
@@ -60,26 +63,32 @@ lista.addEventListener('click', function(evento){
 
     let itensId = itens.querySelector('#product')
     let id = itensId.textContent;
-    
-    itens.remove();
+    id = parseInt(id)
+    itens.remove(id);
     deletarProduto(id)
-    return id;
+   
+
+    return  id;
   }
+  
+async function deletarProduto(id) {
+  const conexao = await fetch(`https://64c1b75afa35860baea0c317.mockapi.io/produto/${id}`,
+  {
+    method: 'DELETE'// especifica o tipo de metodo
+    
+  })
+  const conexaoConvertida = await conexao.json();
+  
+  return conexaoConvertida;
+  
+}
+
 }
 
 )
+//editar
 
 
-async function deletarProduto(id) {
-  const conexao = await fetch(`https://64c1b75afa35860baea0c317.mockapi.io/produto?=id${id} `,
-  {
-    method: 'DELETE'// especifica o tipo de metodo
-  
-  });
-  const conexaoConvertida = await conexao.json();
-
-  return conexaoConvertida;
-}
 
 
 

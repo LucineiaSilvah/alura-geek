@@ -60,7 +60,7 @@ export const conectaApi = {// exporta o conectaApi que é um obj com suas funç�
    criaProduto,
    buscaProduto,
    buscaProdutoCategoria,
-   buscaProdutoConsole
+   buscaProdutoConsole,
 }
   
 
