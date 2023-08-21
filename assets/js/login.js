@@ -2,16 +2,19 @@ const form = document.querySelector('[data-formulario]');
 
 const email = document.getElementById('email')
 const senha = document.getElementById('senha')
-const mensagemUser = document.getElementById('mensagem')
+const mensagem = document.querySelector('small')
 
 form.addEventListener('submit', (e)=>{
   e.preventDefault();
   
-  ;
-checkInputs()
- setTimeout(()=>{
-  window.location.href ='index.html'
- },800)
+  checkInputs();
+ if(isEmailValid(email.value) === true && senhaValidation(senha.value) === true){
+ 
+   setTimeout(()=>{
+    window.location.href ='index.html'
+   },800)
+ }
+
   
 
 })
@@ -20,7 +23,7 @@ checkInputs()
 function checkInputs(){
   const emailValue = email.value.trim();
   const senhaValue = senha.value.trim();
-  const mensagemUserValue = mensagemUser.value.trim()
+  //const mensagemValue = mensagem.value.trim()
   if(emailValue === ''){
     //mostrar erro
     errorValidation(email, 'campo email não pode estar vazio!')
@@ -36,14 +39,11 @@ function checkInputs(){
   } 
 
   if (senhaValue === '') {
-    errorValidation(mensagemUser, 'campo senha não pode estar vazio!')
+    errorValidation(mensagem, 'campo senha não pode estar vazio!')
   
-  }else if(mensagemUserValue.length < 50){
-    errorValidation(senha, 'texto muito pequeno!')
-  }
-  else {
+  }else {
     //add class success
-    successValidation(mensagemUser)
+    successValidation(mensagem)
 
   
   }
@@ -67,7 +67,7 @@ function checkInputs(){
 
 function errorValidation(input,mensagem ){
   const formControl = input.parentElement;
-  const small = formControl.querySelector('small')
+  let small = formControl.querySelector('small')
   small.innerText = mensagem;
   formControl.className = 'form-control error'
 
@@ -82,20 +82,11 @@ function successValidation(input){
 function isEmailValid(email) {
   const re = new RegExp(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/);
   
-
-  if (re.test(email)) {
-     return true;
-  }
-  return false;
+return re.test(email);
 }
 function senhaValidation(senha){
   const senhaReg = new RegExp(/^[a-zA-Z0-9]+[!|@|#|$|%|^|&|*|(|)|-|_]$/)
-  if(senhaReg.test(senha) ){
-    //senha valida
-    return true
-  }
-  //senha invalida
-  return false
+  return senhaReg.test(senha)
 }
 
     
